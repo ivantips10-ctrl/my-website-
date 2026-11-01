@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>IVO TIPS UG · premium game tips</title>
+<!-- Font Awesome 6 (free) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- Google Fonts: Inter & Poppins for modern look -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Inter', sans-serif;
+background: #f4f7fc;
+color: #1e293b;
+line-height: 1.5;
+scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+letter-spacing: -0.02em;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+/* header / nav */
+.navbar {
+background: rgba(10, 25, 47, 0.95);
+backdrop-filter: blur(10px);
+position: sticky;
+top: 0;
+z-index: 100;
+box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+border-bottom: 1px solid rgba(255,255,255,0.08);
+padding: 12px 0;
+}
+
+.nav-container {
+display: flex;
+
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 8px;
+font-size: 1.7rem;
+font-weight: 700;
+color: #fff;
+font-family: 'Poppins', sans-serif;
+letter-spacing: -0.5px;
+}
+
+.logo i {
+color: #facc15;
+background: #1e2a44;
+padding: 8px 10px;
+
+border-radius: 14px;
+font-size: 1.3rem;
+}
+
+.logo span {
+color: #facc15;
+}
+
+.nav-links {
+display: flex;
+gap: 28px;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.nav-links a {
+color: #e2e8f0;
+text-decoration: none;
+font-weight: 500;
+font-size: 1rem;
+
+transition: 0.2s;
+position: relative;
+}
+
+.nav-links a:hover {
+color: #facc15;
+}
+
+.nav-links a::after {
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 0;
+height: 2px;
+background: #facc15;
+transition: 0.2s;
+}
+
+.nav-links a:hover::after {
+
+width: 100%;
+}
+
+.btn-outline {
+border: 1.5px solid #facc15;
+background: transparent;
+color: #facc15 !important;
+padding: 8px 18px;
+border-radius: 40px;
+font-weight: 600;
+transition: 0.2s;
+}
+
+.btn-outline:hover {
+background: #facc15;
+color: #0a192f !important;
+}
+
+/* hero */
+.hero {
+
+background: linear-gradient(145deg, #0a192f 0%, #112b4f 100%);
+color: white;
+padding: 70px 0 80px;
+border-radius: 0 0 40px 40px;
+margin-bottom: 30px;
+position: relative;
+overflow: hidden;
+}
+
+.hero::before {
+content: '⚡';
+position: absolute;
+font-size: 300px;
+opacity: 0.03;
+bottom: -60px;
+right: -20px;
+transform: rotate(15deg);
+pointer-events: none;
+}
+
+
+.hero-content {
+display: flex;
+align-items: center;
+gap: 40px;
+flex-wrap: wrap;
+}
+
+.hero-text {
+flex: 1 1 400px;
+}
+
+.hero-text .badge {
+display: inline-block;
+background: rgba(250, 204, 21, 0.15);
+color: #facc15;
+font-weight: 600;
+font-size: 0.85rem;
+padding: 6px 16px;
+border-radius: 40px;
+
+letter-spacing: 0.3px;
+margin-bottom: 18px;
+border: 1px solid rgba(250, 204, 21, 0.3);
+}
+
+.hero h1 {
+font-size: 3rem;
+line-height: 1.2;
+font-weight: 700;
+margin-bottom: 18px;
+}
+
+.hero h1 i {
+color: #facc15;
+}
+
+.hero p {
+font-size: 1.1rem;
+color: #b0c4de;
+max-width: 540px;
+
+margin-bottom: 28px;
+}
+
+.hero-stats {
+display: flex;
+gap: 36px;
+margin-top: 20px;
+flex-wrap: wrap;
+}
+
+.stat-item h3 {
+color: #facc15;
+font-size: 1.8rem;
+font-weight: 700;
+margin-bottom: 4px;
+}
+
+.stat-item p {
+font-size: 0.9rem;
+color: #94a3b8;
+
+margin-bottom: 0;
+}
+
+.hero-image {
+flex: 1 1 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.mockup-card {
+background: rgba(255,255,255,0.06);
+backdrop-filter: blur(6px);
+padding: 24px 22px;
+border-radius: 28px;
+border: 1px solid rgba(250,204,21,0.25);
+box-shadow: 0 25px 40px -12px rgba(0,0,0,0.5);
+width: 100%;
+max-width: 320px;
+}
+
+
+.mockup-card .tip-row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 14px 0;
+border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.mockup-card .tip-row:last-child {
+border-bottom: none;
+}
+
+.mockup-card .game {
+font-weight: 600;
+color: #f1f5f9;
+}
+
+.mockup-card .odds {
+background: #facc15;
+
+color: #0a192f;
+padding: 4px 12px;
+border-radius: 40px;
+font-weight: 700;
+font-size: 0.85rem;
+}
+
+.mockup-card .status {
+font-size: 0.8rem;
+color: #94a3b8;
+}
+
+/* section title */
+.section-title {
+text-align: center;
+margin-bottom: 48px;
+}
+
+.section-title h2 {
+font-size: 2.2rem;
+
+font-weight: 700;
+color: #0a192f;
+margin-bottom: 12px;
+}
+
+.section-title p {
+color: #4a5c72;
+max-width: 600px;
+margin: 0 auto;
+font-size: 1.05rem;
+}
+
+/* tips grid */
+.tips-section {
+padding: 70px 0;
+}
+
+.tips-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, 
+
+minmax(270px, 1fr));
+gap: 28px;
+}
+
+.tip-card {
+background: white;
+border-radius: 24px;
+padding: 24px 22px;
+box-shadow: 0 10px 25px -8px rgba(0,0,0,0.06);
+border: 1px solid #e9eef4;
+transition: all 0.25s ease;
+display: flex;
+flex-direction: column;
+}
+
+.tip-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 22px 30px -12px rgba(0,0,0,0.12);
+border-color: #facc15;
+}
+
+
+.tip-header {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin-bottom: 12px;
+}
+
+.league {
+background: #eef2f6;
+padding: 4px 12px;
+border-radius: 40px;
+font-size: 0.75rem;
+font-weight: 600;
+color: #1e293b;
+text-transform: uppercase;
+letter-spacing: 0.3px;
+}
+
+.time-badge {
+
+font-size: 0.8rem;
+color: #64748b;
+font-weight: 500;
+}
+
+.match {
+font-weight: 700;
+font-size: 1.2rem;
+margin: 8px 0 6px;
+color: #0a192f;
+}
+
+.prediction {
+display: flex;
+align-items: center;
+gap: 8px;
+background: #f8fafc;
+padding: 10px 14px;
+border-radius: 14px;
+margin: 14px 0 10px;
+
+font-weight: 600;
+}
+
+.prediction i {
+color: #facc15;
+background: #0a192f;
+padding: 6px;
+border-radius: 50%;
+font-size: 0.8rem;
+}
+
+.odds-big {
+font-size: 1.9rem;
+font-weight: 800;
+color: #0a192f;
+line-height: 1.2;
+}
+
+.odds-big small {
+font-size: 0.9rem;
+
+font-weight: 500;
+color: #64748b;
+}
+
+.confidence {
+display: flex;
+align-items: center;
+gap: 8px;
+font-size: 0.9rem;
+color: #475569;
+margin: 10px 0 16px;
+}
+
+.stars {
+color: #facc15;
+letter-spacing: 2px;
+}
+
+.btn-tip {
+background: #0a192f;
+
+color: white;
+border: none;
+padding: 12px 16px;
+border-radius: 14px;
+font-weight: 600;
+font-size: 0.95rem;
+cursor: pointer;
+transition: 0.2s;
+margin-top: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+}
+
+.btn-tip:hover {
+background: #1e3a5f;
+}
+
+/* payment / mobile money section */
+
+.payment-section {
+background: linear-gradient(120deg, #0a192f, #112b4f);
+border-radius: 40px;
+padding: 48px 32px;
+margin: 40px 0 60px;
+color: white;
+box-shadow: 0 25px 40px -15px rgba(0,0,0,0.3);
+}
+
+.payment-wrapper {
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+align-items: center;
+justify-content: space-between;
+}
+
+.payment-text {
+flex: 1 1 280px;
+
+}
+
+.payment-text h2 {
+font-size: 2rem;
+margin-bottom: 16px;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.payment-text h2 i {
+color: #facc15;
+}
+
+.payment-text p {
+color: #b0c4de;
+margin-bottom: 24px;
+max-width: 460px;
+}
+
+.payment-methods {
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
+margin: 28px 0 20px;
+}
+
+.method-badge {
+background: rgba(255,255,255,0.08);
+border: 1px solid rgba(255,255,255,0.15);
+padding: 10px 18px;
+border-radius: 40px;
+display: flex;
+align-items: center;
+gap: 10px;
+font-weight: 500;
+font-size: 0.95rem;
+}
+
+.method-badge i {
+
+color: #facc15;
+font-size: 1.2rem;
+}
+
+.payment-box {
+flex: 1 1 320px;
+background: rgba(255,255,255,0.05);
+backdrop-filter: blur(12px);
+border-radius: 28px;
+padding: 28px;
+border: 1px solid rgba(250,204,21,0.2);
+}
+
+.payment-box h3 {
+font-size: 1.3rem;
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+
+.input-group {
+margin-bottom: 20px;
+}
+
+.input-group label {
+display: block;
+font-size: 0.85rem;
+font-weight: 500;
+color: #94a3b8;
+margin-bottom: 6px;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+.input-group select,
+.input-group input {
+width: 100%;
+padding: 14px 16px;
+background: rgba(255,255,255,0.07);
+
+border: 1px solid rgba(255,255,255,0.15);
+border-radius: 14px;
+color: white;
+font-size: 1rem;
+font-family: 'Inter', sans-serif;
+transition: 0.15s;
+}
+
+.input-group select option {
+background: #1e2a44;
+color: white;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+outline: 2px solid #facc15;
+border-color: transparent;
+background: rgba(255,255,255,0.1);
+}
+
+.input-group input::placeholder {
+color: #64748b;
+}
+
+.btn-pay {
+background: #facc15;
+color: #0a192f;
+border: none;
+width: 100%;
+padding: 16px;
+border-radius: 16px;
+font-weight: 700;
+font-size: 1.05rem;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+cursor: pointer;
+transition: 0.2s;
+margin-top: 10px;
+
+font-family: 'Poppins', sans-serif;
+}
+
+.btn-pay:hover {
+background: #eab308;
+transform: scale(1.01);
+}
+
+.payment-note {
+font-size: 0.8rem;
+color: #94a3b8;
+text-align: center;
+margin-top: 14px;
+}
+
+/* testimonial / trust */
+.trust-section {
+padding: 20px 0 60px;
+}
+
+.testimonial-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 28px;
+}
+
+.testimonial {
+background: white;
+border-radius: 24px;
+padding: 24px;
+box-shadow: 0 6px 18px rgba(0,0,0,0.02);
+border: 1px solid #eef2f6;
+}
+
+.testimonial i {
+color: #facc15;
+font-size: 1.8rem;
+margin-bottom: 12px;
+}
+
+
+.testimonial p {
+color: #334155;
+font-style: italic;
+margin-bottom: 16px;
+}
+
+.user {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.user-avatar {
+background: #0a192f;
+color: #facc15;
+width: 42px;
+height: 42px;
+display: flex;
+align-items: center;
+
+justify-content: center;
+border-radius: 50%;
+font-weight: 700;
+}
+
+.user-info h4 {
+font-size: 0.95rem;
+font-weight: 700;
+}
+
+.user-info span {
+font-size: 0.8rem;
+color: #64748b;
+}
+
+/* footer */
+footer {
+background: #0a192f;
+color: #94a3b8;
+padding: 48px 0 24px;
+
+border-radius: 40px 40px 0 0;
+margin-top: 30px;
+}
+
+.footer-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 36px;
+margin-bottom: 40px;
+}
+
+.footer-col h4 {
+color: white;
+font-size: 1.1rem;
+margin-bottom: 18px;
+font-weight: 600;
+}
+
+.footer-col a {
+
+display: block;
+color: #94a3b8;
+text-decoration: none;
+margin-bottom: 10px;
+font-size: 0.95rem;
+transition: 0.15s;
+}
+
+.footer-col a:hover {
+color: #facc15;
+}
+
+.social-icons {
+display: flex;
+gap: 14px;
+margin-top: 16px;
+}
+
+.social-icons a {
+background: rgba(255,255,255,0.06);
+
+padding: 10px;
+border-radius: 50%;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+color: #facc15;
+transition: 0.2s;
+}
+
+.social-icons a:hover {
+background: #facc15;
+color: #0a192f;
+}
+
+.copyright {
+border-top: 1px solid rgba(255,255,255,0.08);
+padding-top: 24px;
+text-align: center;
+font-size: 0.85rem;
+}
+
+
+/* toast notification */
+.toast {
+position: fixed;
+bottom: 30px;
+left: 50%;
+transform: translateX(-50%) translateY(20px);
+background: #1e293b;
+color: #f1f5f9;
+padding: 14px 28px;
+border-radius: 60px;
+box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+font-weight: 500;
+opacity: 0;
+visibility: hidden;
+transition: all 0.3s ease;
+z-index: 999;
+border-left: 5px solid #facc15;
+white-space: nowrap;
+}
+
+
+.toast.show {
+opacity: 1;
+visibility: visible;
+transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 768px) {
+.hero h1 {
+font-size: 2.4rem;
+}
+.nav-container {
+flex-direction: column;
+gap: 14px;
+}
+.nav-links {
+gap: 18px;
+justify-content: center;
+}
+.hero-stats {
+
+gap: 24px;
+}
+.payment-section {
+padding: 32px 22px;
+}
+.footer-grid {
+gap: 24px;
+}
+.toast {
+white-space: normal;
+text-align: center;
+width: 90%;
+font-size: 0.9rem;
+padding: 12px 18px;
+}
+}
+
+@media (max-width: 480px) {
+.hero {
+padding: 44px 0 56px;
+
+}
+.hero h1 {
+font-size: 2rem;
+}
+.section-title h2 {
+font-size: 1.8rem;
+}
+.payment-methods {
+gap: 10px;
+}
+.method-badge {
+padding: 8px 14px;
+font-size: 0.85rem;
+}
+}
+
+/* smooth focus */
+a, button {
+-webkit-tap-highlight-color: transparent;
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+<div class="container nav-container">
+<div class="logo">
+<i class="fas fa-bolt"></i>
+<span>IVO</span> TIPS UG
+</div>
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#tips">Tips</a>
+<a href="#payment">Payment</a>
+<a href="#trust">Reviews</a>
+<a href="#payment" class="btn-outline"><i class="fas fa-mobile-alt" style="margin-right:6px;"></i>Subscribe</a>
+</div>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="container hero-content">
+<div class="hero-text">
+<span class="badge"><i class="fas fa-fire" style="margin-right:6px;"></i> #1 UG tipster community</span>
+<h1>Win smarter with <i>IVO TIPS UG</i></h1>
+<p>Expert game predictions, real-time odds & mobile money payouts. Trusted by 12,000+ winners across Uganda.</p>
+<div class="hero-stats">
+<div class="stat-item">
+<h3>87%</h3>
+<p>win rate (last 30d)</p>
+</div>
+<div class="stat-item">
+
+<h3>2.4k+</h3>
+<p>premium tips</p>
+</div>
+<div class="stat-item">
+<h3>24/7</h3>
+<p>support</p>
+</div>
+</div>
+</div>
+<div class="hero-image">
+<div class="mockup-card">
+<div class="tip-row">
+<span class="game">Express FC vs Villa</span>
+<span class="odds">1.85</span>
+</div>
+<div class="tip-row">
+<span class="game">KCCA vs URA</span>
+<span class="odds">2.10</span>
+</div>
+<div class="tip-row">
+
+<span class="game">Bright Stars vs Vipers</span>
+<span class="odds">1.70</span>
+</div>
+<div style="margin-top:18px; font-size:0.85rem; color:#facc15; display:flex; gap:8px; align-items:center;">
+<i class="fas fa-check-circle"></i> today's premium picks
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TIPS GRID -->
+<section class="tips-section" id="tips">
+<div class="container">
+<div class="section-title">
+<h2>Today's top predictions</h2>
+
+<p>Curated by our experts — 85%+ confidence picks. Updated every 3 hours.</p>
+</div>
+
+<div class="tips-grid" id="tipsGrid">
+<!-- cards injected by JS -->
+</div>
+</div>
+</section>
+
+<!-- MOBILE MONEY PAYMENT SECTION -->
+<section class="payment-section" id="payment">
+<div class="container payment-wrapper">
+<div class="payment-text">
+<h2><i class="fas fa-mobile-alt"></i> Pay with Mobile Money</h2>
+<p>Unlock VIP tips instantly. Safe, fast & fully automated — MTN & Airtel supported.</p>
+<div class="payment-methods">
+<div class="method-badge"><i class="fas fa-
+
+phone-alt"></i> MTN MoMo</div>
+<div class="method-badge"><i class="fas fa-sim-card"></i> Airtel Money</div>
+<div class="method-badge"><i class="fas fa-lock"></i> Secure</div>
+</div>
+<p style="font-size:0.9rem;"><i class="fas fa-shield-alt" style="color:#facc15; margin-right:8px;"></i> 256-bit encrypted · instant activation</p>
+</div>
+
+<div class="payment-box">
+<h3><i class="fas fa-ticket-alt" style="color:#facc15;"></i> Subscribe now</h3>
+<form id="paymentForm">
+<div class="input-group">
+<label for="plan">Select plan</label>
+<select id="plan" required>
+<option value="daily">Daily pass — UGX 5,000</
+
+option>
+<option value="weekly" selected>Weekly VIP — UGX 25,000</option>
+<option value="monthly">Monthly elite — UGX 70,000</option>
+</select>
+</div>
+<div class="input-group">
+<label for="phone">Mobile money number</label>
+<input type="tel" id="phone" placeholder="e.g. 0772 123 456" required>
+</div>
+<div class="input-group">
+<label for="network">Network</label>
+<select id="network">
+<option value="MTN">MTN Uganda</option>
+<option value="Airtel">Airtel Uganda</option>
+</select>
+</div>
+
+<button type="submit" class="btn-pay"><i class="fas fa-lock"></i> Pay & unlock</button>
+<div class="payment-note">You'll receive a prompt on your phone to approve.</div>
+</form>
+</div>
+</div>
+</section>
+
+<!-- TRUST / TESTIMONIALS -->
+<section class="trust-section" id="trust">
+<div class="container">
+<div class="section-title">
+<h2>Trusted by winners</h2>
+<p>Real feedback from our community.</p>
+</div>
+<div class="testimonial-grid">
+<div class="testimonial">
+<i class="fas fa-quote-left"></i>
+<p>“IVO TIPS changed my betting game. The 
+
+mobile money payment is instant and I've been winning consistently.”</p>
+<div class="user">
+<div class="user-avatar">JD</div>
+<div class="user-info"><h4>John D.</h4><span>Kampala</span></div>
+</div>
+</div>
+<div class="testimonial">
+<i class="fas fa-quote-left"></i>
+<p>“The most reliable tipster in UG. Odds are accurate and the VIP tips are worth every shilling.”</p>
+<div class="user">
+<div class="user-avatar">SM</div>
+<div class="user-info"><h4>Sarah M.</h4><span>Entebbe</span></div>
+</div>
+</div>
+<div class="testimonial">
+
+<i class="fas fa-quote-left"></i>
+<p>“I paid with Airtel Money and got access in seconds. Already hit two accumulators this week!”</p>
+<div class="user">
+<div class="user-avatar">PK</div>
+<div class="user-info"><h4>Peter K.</h4><span>Jinja</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col">
+<div class="logo" style="margin-bottom:16px;">
+
+<i class="fas fa-bolt"></i> <span style="color:#facc15;">IVO</span> TIPS UG
+</div>
+<p style="font-size:0.9rem; line-height:1.6;">Premium game predictions & mobile money subscriptions. Play responsibly, 18+.</p>
+</div>
+<div class="footer-col">
+<h4>Quick links</h4>
+<a href="#home">Home</a>
+<a href="#tips">Today's tips</a>
+<a href="#payment">Subscribe</a>
+<a href="#trust">Reviews</a>
+</div>
+<div class="footer-col">
+<h4>Support</h4>
+<a href="#">Help center</a>
+<a href="#">Contact us</a>
+<a href="#">Terms of service</a>
+<a href="#">Privacy policy</a>
+
+</div>
+<div class="footer-col">
+<h4>Follow us</h4>
+<div class="social-icons">
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+<a href="#"><i class="fab fa-telegram-plane"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+</div>
+</div>
+</div>
+<div class="copyright">
+© 2025 IVO TIPS UG. All rights reserved. Built for winners.
+</div>
+</div>
+</footer>
+
+<!-- Toast notification -->
+
+<div id="toast" class="toast"><i class="fas fa-check-circle" style="color:#facc15; margin-right:10px;"></i> Payment successful! VIP unlocked.</div>
+
+<script>
+(function() {
+// ---------- TIPS DATA ----------
+const tips = [
+{ league: 'Uganda Premier', time: 'Today 16:00', match: 'Express FC vs Villa', prediction: 'Express win', odds: '1.85', confidence: 5, stars: '★★★★★' },
+{ league: 'Uganda Premier', time: 'Today 18:30', match: 'KCCA vs URA', prediction: 'Over 2.5 goals', odds: '2.10', confidence: 4, stars: '★★★★☆' },
+{ league: 'Uganda Premier', time: 'Tomorrow 14:00', match: 'Bright Stars vs Vipers', prediction: 'Vipers win', odds: '1.70', confidence: 5, stars: 
+
+'★★★★★' },
+{ league: 'Champions League', time: 'Today 21:00', match: 'Real Madrid vs Bayern', prediction: 'Both teams to score', odds: '1.65', confidence: 4, stars: '★★★★☆' },
+{ league: 'Premier League', time: 'Tomorrow 17:30', match: 'Arsenal vs Liverpool', prediction: 'Arsenal win or draw', odds: '1.45', confidence: 4, stars: '★★★★☆' },
+{ league: 'Serie A', time: 'Today 19:45', match: 'Inter vs Milan', prediction: 'Under 3.5 goals', odds: '1.90', confidence: 3, stars: '★★★☆☆' },
+{ league: 'La Liga', time: 'Tomorrow 20:00', match: 'Barcelona vs Atletico', prediction: 'Barcelona win', odds: '1.95', confidence: 4, stars: '★★★★☆' },
+{ league: 'Bundesliga', time: 'Today 15:30', match: 'Dortmund vs Leipzig', prediction: 'Over 1.5 goals', odds: '1.30', confidence: 5, stars: '★★★★★' }
+
+ ];
+
+const tipsGrid = document.getElementById('tipsGrid');
+
+// render tip cards
+function renderTips() {
+tipsGrid.innerHTML = tips.map(tip => `<div class="tip-card"> <div class="tip-header"> <span class="league">${tip.league}</span>
+<span class="time-badge"><i class="far fa-clock" style="margin-right:4px;"></i>${tip.time}</span> </div> <div class="match">${tip.match}</div>
+<div class="prediction">
+<i class="fas fa-futbol"></i> ${tip.prediction} </div> <div style="display:flex; justify-content:space-between; align-items:center; margin-top:8px;"> <div class="odds-big">${tip.odds} <small>odds</small></div>
+
+<div class="confidence">
+<span class="stars">${tip.stars}</span> </div> </div> <button class="btn-tip" data-match="${tip.match}">
+<i class="fas fa-lock-open"></i> Unlock tip
+</button>
+</div>`).join('');
+
+// attach event listeners to "Unlock tip" buttons
+document.querySelectorAll('.btn-tip').forEach(btn => {
+btn.addEventListener('click', function(e) {
+e.preventDefault();
+const match = this.getAttribute('data-match');
+// Simulate unlocking – scroll to payment and prefill? We'll just show toast.
+showToast(`🔓 Premium tip unlocked for ${match}!`);
+// optional: scroll to payment
+
+// document.getElementById('payment').scrollIntoView({ behavior: 'smooth' });
+});
+});
+}
+
+// ---------- TOAST ----------
+const toast = document.getElementById('toast');
+let toastTimeout;
+
+function showToast(message) {
+if (toastTimeout) clearTimeout(toastTimeout);
+toast.innerHTML = `<i class="fas fa-check-circle" style="color:#facc15; margin-right:10px;"></i> ${message}`;
+toast.classList.add('show');
+toastTimeout = setTimeout(() => {
+toast.classList.remove('show');
+}, 3800);
+
+}
+
+// ---------- PAYMENT FORM (mobile money simulation) ----------
+const paymentForm = document.getElementById('paymentForm');
+
+paymentForm.addEventListener('submit', function(e) {
+e.preventDefault();
+
+const phoneInput = document.getElementById('phone');
+const phone = phoneInput.value.trim();
+const plan = document.getElementById('plan').value;
+const network = document.getElementById('network').value;
+
+// simple validation: at least 9 digits (Uganda 
+
+style)
+const digits = phone.replace(/\D/g, '');
+if (digits.length < 9) {
+    showToast('Please enter a valid Uganda mobile money number.');
+    return;
+  }
+
+  // Demo payment flow only — no real money is charged by this page.
+  showToast(`Payment request prepared for ${plan} via ${network}.`);
+});
+
+})(); 
+</script>
+</body>
+</html>
